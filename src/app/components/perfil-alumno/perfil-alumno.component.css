@@ -21,7 +21,7 @@ body {
 
 
 .imagenfondo {
-    background-image: url(/my-app/src/imagenesCSS/trailblazer.png);
+    background-image: url(../../../assets/imagenesCSS/trailblazer.png);
     display: flex;
     justify-content: center;
     background-repeat: no-repeat;
