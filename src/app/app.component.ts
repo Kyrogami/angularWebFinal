@@ -13,4 +13,5 @@ import { LogginComponent } from './components/loggin/loggin.component';
 export class AppComponent {
   title = 'Holita weys';
   cosita = "soy una cosita";
+  
 }
