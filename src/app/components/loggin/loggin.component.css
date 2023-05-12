@@ -1,5 +1,16 @@
 /* BASIC */
 
+.imagenfondo {
+    background-image: url(../../../assets/imagenesCSS/trailblazer.png);
+    display: flex;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 80em;
+
+}
+
 html {
     background-color: #56baed;
   }
@@ -38,6 +49,8 @@ html {
     width: 100%;
     min-height: 100%;
     padding: 20px;
+    z-index: 200;
+    z-index: -1;
   }
   
   #formContent {
@@ -62,7 +75,7 @@ html {
     -webkit-border-radius: 0 0 10px 10px;
     border-radius: 0 0 10px 10px;
   }
-  
+
   
   
   /* TABS */
@@ -144,7 +157,7 @@ html {
     color: #cccccc;
   }
   
-  
+
   
   /* ANIMATIONS */
   
