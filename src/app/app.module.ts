@@ -6,6 +6,7 @@ import { LogginComponent } from './components/loggin/loggin.component';
 import { PerfilAlumnoComponent } from './components/perfil-alumno/perfil-alumno.component';
 import { BackNotasComponent } from './components/back-notas/back-notas.component';
 import { AppRoutingModule } from './app-routing.module';
+import { UsuarioDetallesComponent } from './usuario-detalles/usuario-detalles.component';
 //import{NgbCollapseModule, NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
@@ -13,7 +14,8 @@ import { AppRoutingModule } from './app-routing.module';
     AppComponent,
     LogginComponent,
     PerfilAlumnoComponent,
-    BackNotasComponent
+    BackNotasComponent,
+    UsuarioDetallesComponent
   ],
   imports: [
     BrowserModule,
