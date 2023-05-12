@@ -24,14 +24,3 @@ import { AppRoutingModule } from './app-routing.module';
 })
 export class AppModule { }
 
-export interface usuarios{
-  id:number;
-  nombre:String;
-  apellidos:String;
-  contraseña:String;
-  foto:String;
-  direccion:String;
-  telefono:number;
-  tipo_usuario:String;
-  activo:boolean;
-}
