@@ -1,5 +1,6 @@
-export interface interfaceCursos{
+export interface interfazCursos{
     id:number;
+    nombre:String,
     id_a1:number;
     id_a2:number;
     id_a3:number;
