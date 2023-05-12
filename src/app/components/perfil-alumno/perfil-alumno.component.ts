@@ -16,7 +16,7 @@ export class PerfilAlumnoComponent implements OnInit {
   ngOnInit() {
   }
 
-  onSelect(usuario: interfazUsuario): void {
-    this.selectedUsuario = usuario;
+  onSelect(selectedUsuario: interfazUsuario): void {
+    this.selectedUsuario = selectedUsuario;
   }
 }

@@ -11,6 +11,7 @@ import { UsuarioDetallesComponent } from './usuario-detalles/usuario-detalles.co
 
 @NgModule({
   declarations: [
+    
     AppComponent,
     LogginComponent,
     PerfilAlumnoComponent,
