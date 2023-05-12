@@ -1,8 +1,34 @@
-
-    <div id="container">
-
+<div id="container">
+    <!--
 <h2>{{usuario.nombre | uppercase}} Details</h2>
 <div><span>nombre:</span>{{usuario.nombre}}</div>
+-->
+
+    <h2>MIS USUARIOS</h2>
+    <ul class="users">
+        <li *ngFor="let listaUsuario of listaUsuarios">
+            <button [class.selected]="listaUsuario === selectedUsuario" 
+            type="button" (click)="onSelect(listaUsuario)">
+            <span>{{listaUsuario.apellidos}}</span><br>
+            <span>{{listaUsuario.nombre}}</span><br>
+            <span>{{listaUsuario.usuario}}</span><br>
+            <span>{{listaUsuario.password}}</span><br>
+            <span>{{listaUsuario.foto}}</span><br>
+            <span>{{listaUsuario.direccion}}</span><br>
+            <span>{{listaUsuario.telefono}}</span><br>
+            <span>{{listaUsuario.tipo_usuario}}</span><br>
+            <span>{{listaUsuario.activo}}</span><br>
+            <span class="listaUsuarios">{{listaUsuario.id}}</span>
+            </button>
+        </li>
+    </ul>
+
+    <div *ngIf="selectedUsuario">
+        <h2>{{selectedUsuario.nombre | uppercase}} Details</h2>
+        
+        <!-- Resto del contenido -->
+      </div>
+      
 
 
 
@@ -22,71 +48,65 @@
 
 
 
+    <div class="imagenfondo">
+        <!-- SECCIÓN ASIGNATURAS Y NOTA -->
+        <div class="espaciosec">
 
 
+            <section class=secNotas>
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr class=asignaturas>
+                                <th></th>
+                                <th>JAVA</th>
+                                <th>MYSQL</th>
+                                <th>JS</th>
+                                <th>CSS</th>
+                                <th>HTML5</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="datos"> </td>
+                                <td class="datos">0</td>
+                                <td class="datos">10</td>
+                                <td class="datos"> 9</td>
+                                <td class="datos">8</td>
+                                <td class="datos">7</td>
+
+                            </tr>
+                            <tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section class="secInfo">
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr class=asignaturas>
+                                <th></th>
+                                <th>Porcentaje del curso</th>
+                                <th>Nota media</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="datos"></td>
+                                <td class="datos">73%</td>
+                                <td class="datos">6.8</td>
 
 
-        <div class="imagenfondo">
-            <!-- SECCIÓN ASIGNATURAS Y NOTA -->
-            <div class="espaciosec">
-
-
-                <section class=secNotas>
-                    <div class="table-responsive">
-                        <table class="table table-hover">
-                            <thead>
-                                <tr class=asignaturas>
-                                    <th></th>
-                                    <th>JAVA</th>
-                                    <th>MYSQL</th>
-                                    <th>JS</th>
-                                    <th>CSS</th>
-                                    <th>HTML5</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="datos"> </td>
-                                    <td class="datos">0</td>
-                                    <td class="datos">10</td>
-                                    <td class="datos"> 9</td>
-                                    <td class="datos">8</td>
-                                    <td class="datos">7</td>
-
-                                </tr>
-                                <tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </section>
-
-                <section class="secInfo">
-                    <div class="table-responsive">
-                        <table class="table table-hover">
-                            <thead>
-                                <tr class=asignaturas>
-                                    <th></th>
-                                    <th>Porcentaje del curso</th>
-                                    <th>Nota media</th>
-
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="datos"></td>
-                                    <td class="datos">73%</td>
-                                    <td class="datos">6.8</td>
-
-
-                                </tr>
-                                <tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </section>
-            </div>
-            
+                            </tr>
+                            <tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
         </div>
+
     </div>
-
-
+</div>

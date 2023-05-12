@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { interfazUsuario } from '../../usuarios';
-import { interfazCursos } from 'src/app/cursos';
+import { USUARIOS } from 'src/app/listaUsuarios';
 
 @Component({
   selector: 'app-perfil-alumno',
@@ -8,22 +8,15 @@ import { interfazCursos } from 'src/app/cursos';
   styleUrls: ['./perfil-alumno.component.css']
 })
 export class PerfilAlumnoComponent implements OnInit {
-  usuario: interfazUsuario = {
-    id: 1, 
-    nombre: 'Adri', 
-    dni: "48685511-X",
-    apellidos: "sanchez martinez", 
-    usuario: "adrijaja", 
-    contraseña: "jaja1234", 
-    foto: "png1", 
-    direccion: "Calle de la Inquisición 1", 
-    telefono: 123456789, 
-    tipo_usuario: "alumno", 
-    activo: true
-  };
+  listaUsuarios: interfazUsuario[] = USUARIOS;
+  selectedUsuario?: interfazUsuario;
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onSelect(usuario: interfazUsuario): void {
+    this.selectedUsuario = usuario;
   }
 }

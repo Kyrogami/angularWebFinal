@@ -4,7 +4,7 @@ export interface interfazUsuario {
     dni:String;
     apellidos: string;
     usuario:String;
-    contraseña: string;
+    password: string;
     foto: string;
     direccion: string;
     telefono: number;
