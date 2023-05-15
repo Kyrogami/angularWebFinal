@@ -11,6 +11,13 @@
     top: 50;
 }
 
+#titulolista {
+
+    color: white;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
 body {
     background-color: #ffffff;
 }
@@ -21,7 +28,7 @@ body {
 
 
 .imagenfondo {
-    background-image: url(../../../assets/imagenesCSS/trailblazer.png);
+    background-image: url(../../../assets/imagenesCSS/fondos/cyberpunk.jpg);
     display: flex;
     justify-content: center;
     background-repeat: no-repeat;
@@ -96,30 +103,8 @@ nav {
     color: white;
 }
 
-.secNotas {
-    background-color: c6d4e1;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    padding: auto;
-    align-items: center;
-    border: #000000;
-    border-width: medium;
-    padding-bottom: 400px;
-
-}
-
-.secInfo {
-    background-color: c6d4e1;
-    display: flex;
-    justify-content: center;
-    width: 25rem;
-    height: 10rem;
-    margin: 5rem;
-    padding: auto;
-    align-items: center;
-
+th {
+    color: white;
 }
 
 .asignaturas {
@@ -132,7 +117,7 @@ nav {
 }
 
 .espaciosec {
-    height: 100%;
+    height: 50%;
 }
 
 footer {
@@ -221,4 +206,3 @@ footer {
 
     }
 }
-

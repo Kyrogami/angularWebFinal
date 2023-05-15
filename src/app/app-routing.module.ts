@@ -9,7 +9,7 @@ import { AppComponent } from './app.component';
 
 // RUTAS y con<router-outlet></router-outlet> lo saca.
 const routes: Routes = [
-  {path: '', component: LogginComponent},
+  {path: 'loggin', component: LogginComponent},
   {path: 'inicio', component: PerfilAlumnoComponent},
   {path:'back', component: BackNotasComponent },
   {path:'perfil',component:PerfilAlumnoComponent}

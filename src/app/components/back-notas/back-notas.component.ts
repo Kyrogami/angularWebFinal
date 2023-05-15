@@ -1,4 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { interfazUsuario } from '../../usuarios';
+import { USUARIOS } from 'src/app/listaUsuarios';
+
 
 @Component({
   selector: 'app-back-notas',
@@ -6,5 +9,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./back-notas.component.css']
 })
 export class BackNotasComponent {
+  listaUsuarios: interfazUsuario[] = USUARIOS;
+  selectedUsuario?: interfazUsuario;
+  usuario:any;
 
+  constructor() { }
+
+  ngOnInit() {
+  }
+
+  onSelect(selectedUsuario: interfazUsuario): void {
+    this.selectedUsuario = selectedUsuario;
+    
+  }
 }

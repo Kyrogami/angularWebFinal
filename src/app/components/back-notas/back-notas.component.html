@@ -2,10 +2,35 @@
 <div id="container">
 
 
-
     <div class="imagenfondo">
         <!-- SECCIÓN ASIGNATURAS Y NOTA -->
         <div class="espaciosec">
+<div id="titulolista">Listad de Alumnos
+<div id="cajaDetalles">
+  <table class="table table-hover">
+    <thead>
+      <tr class="asignaturas">
+        <th>Nombre</th>
+        <th>Apellidos</th>
+        <th>DNI</th>
+        <th>direccion</th>
+        <th>activo</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let detallesUsuarios of listaUsuarios">
+          <td class="datos">{{ detallesUsuarios.nombre }}</td>
+          <td class="datos">{{ detallesUsuarios.apellidos }}</td>
+          <td class="datos">{{ detallesUsuarios.dni }}</td>
+          <td class="datos">{{ detallesUsuarios.direccion }}</td>
+          <td class="datos">{{ detallesUsuarios.activo }}</td>
+          <!-- Resto de las columnas de datos -->
+        </tr>
+      </tbody>
+      
+  </table>
+</div>
+</div>
 
 
             <section class=secNotas>
@@ -27,7 +52,7 @@
                                 <td class="datos">Adri</td>
                                 <td class="datos">Sánchez Martínez</td>
                                 <td class="datos">10</td>
-                                <td class="datos">FULLSTACK%</td>
+                                <td class="datos">FULLSTACK</td>
                                 <td class="datos">73%</td>
 
                                 <tr>
@@ -43,7 +68,7 @@
                                         <td class="datos">Adri</td>
                                         <td class="datos">Sánchez Martínez</td>
                                         <td class="datos">10</td>
-                                        <td class="datos">FULLSTACK%</td>
+                                        <td class="datos">FULLSTACK</td>
                                         <td class="datos">73%</td>
                             </tr>
                             <tr>

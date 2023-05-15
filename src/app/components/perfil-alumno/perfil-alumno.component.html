@@ -1,32 +1,12 @@
 <div id="container">
-    <!--
-    <h2>{{usuario.nombre | uppercase}} Details</h2>
-    <div><span>nombre:</span>{{usuario.nombre}}</div>
-    -->
-
-    <h2>MIS USUARIOS</h2>
-    <ul class="users">
-        <li *ngFor="let listaUsuario of listaUsuarios">
-            <button [class.selected]="listaUsuario === selectedUsuario" type="button" (click)="onSelect(listaUsuario)">
-                <span>{{listaUsuario.apellidos}}</span><br>
-                <span>{{listaUsuario.nombre}}</span><br>
-                <span class="listaUsuarios">{{listaUsuario.id}}</span>
-            </button>
-        </li>
-    </ul>
-
-    <div *ngIf="selectedUsuario">
-        <h2>{{selectedUsuario.nombre | uppercase}} Details</h2>
-        <app-usuario-detalles [usuario]="selectedUsuario"></app-usuario-detalles>
-    </div>
 
 
 
-    <div class="imagenfondo">
-        <!-- SECCIÓN ASIGNATURAS Y NOTA -->
-        <div class="espaciosec">
-
-
+   <!--  <div class="imagenfondo">
+         SECCIÓN ASIGNATURAS Y NOTA 
+        <div class="espaciosec"> 
+        -->
+<!-- 
             <section class=secNotas>
                 <div class="table-responsive">
                     <table class="table table-hover">
@@ -82,4 +62,4 @@
             </section>
         </div>
 
-    </div>
+        -->
