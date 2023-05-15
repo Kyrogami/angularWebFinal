@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { LogginComponent } from './components/loggin/loggin.component';
 import { PerfilAlumnoComponent } from './components/perfil-alumno/perfil-alumno.component';
@@ -20,10 +20,11 @@ import { UsuarioDetallesComponent } from './usuario-detalles/usuario-detalles.co
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+export class UsuarioDetallesModule { }
 

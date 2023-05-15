@@ -1,6 +1,5 @@
 import { Component, Input } from '@angular/core';
 import { interfazUsuario } from '../usuarios';
-import {usuario}
 
 @Component({
   selector: 'app-usuario-detalles',
@@ -8,5 +7,5 @@ import {usuario}
   styleUrls: ['./usuario-detalles.component.css']
 })
 export class UsuarioDetallesComponent {
-  @Input() usuario: interfazUsuario;
+  @Input() usuario?: interfazUsuario;
 }

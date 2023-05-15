@@ -1,8 +1,8 @@
 <div id="container">
     <!--
-<h2>{{usuario.nombre | uppercase}} Details</h2>
-<div><span>nombre:</span>{{usuario.nombre}}</div>
--->
+    <h2>{{usuario.nombre | uppercase}} Details</h2>
+    <div><span>nombre:</span>{{usuario.nombre}}</div>
+    -->
 
     <h2>MIS USUARIOS</h2>
     <ul class="users">
@@ -10,13 +10,6 @@
             <button [class.selected]="listaUsuario === selectedUsuario" type="button" (click)="onSelect(listaUsuario)">
                 <span>{{listaUsuario.apellidos}}</span><br>
                 <span>{{listaUsuario.nombre}}</span><br>
-                <span>{{listaUsuario.usuario}}</span><br>
-                <span>{{listaUsuario.password}}</span><br>
-                <span>{{listaUsuario.foto}}</span><br>
-                <span>{{listaUsuario.direccion}}</span><br>
-                <span>{{listaUsuario.telefono}}</span><br>
-                <span>{{listaUsuario.tipo_usuario}}</span><br>
-                <span>{{listaUsuario.activo}}</span><br>
                 <span class="listaUsuarios">{{listaUsuario.id}}</span>
             </button>
         </li>
@@ -24,26 +17,8 @@
 
     <div *ngIf="selectedUsuario">
         <h2>{{selectedUsuario.nombre | uppercase}} Details</h2>
-
-        <!-- Resto del contenido -->
+        <app-usuario-detalles [usuario]="selectedUsuario"></app-usuario-detalles>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -108,4 +83,3 @@
         </div>
 
     </div>
-</div>

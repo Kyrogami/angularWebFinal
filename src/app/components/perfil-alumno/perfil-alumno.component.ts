@@ -10,6 +10,7 @@ import { USUARIOS } from 'src/app/listaUsuarios';
 export class PerfilAlumnoComponent implements OnInit {
   listaUsuarios: interfazUsuario[] = USUARIOS;
   selectedUsuario?: interfazUsuario;
+  usuario:any;
 
   constructor() { }
 
@@ -18,5 +19,7 @@ export class PerfilAlumnoComponent implements OnInit {
 
   onSelect(selectedUsuario: interfazUsuario): void {
     this.selectedUsuario = selectedUsuario;
+    
   }
 }
+
