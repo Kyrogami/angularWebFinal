@@ -11,10 +11,17 @@
     top: 50;
 }
 
-#titulolista {
+.stat{font-size: xx-large;}
 
+#titulolista {
     color: white;
-    font-size: xx-large;
+
+    justify-content: center;
+}
+
+.cajaDetalles {
+    color: white;
+
     font-weight: bolder;
 }
 

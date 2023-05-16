@@ -27,7 +27,7 @@ html {
     color: #cccccc;
   }
   
-  
+  .popup{visibility: hidden;}
   
   /* STRUCTURE */
   
@@ -114,6 +114,7 @@ html {
     -ms-transform: scale(0.95);
     transform: scale(0.95);
   }
+
   
   input[type=text] {
     background-color: #f6f6f6;
@@ -440,10 +441,10 @@ footer {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 10%;
+    height: 6em;
     padding-left: 2%;
     padding-right: 2%;
-    position: absolute;
+    position: 0;
     bottom: 0;
 }
 

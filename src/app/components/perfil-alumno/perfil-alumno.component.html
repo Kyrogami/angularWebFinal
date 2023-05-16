@@ -1,12 +1,36 @@
-<div id="container">
 
 
+<div class="imagenfondo">
 
-   <!--  <div class="imagenfondo">
+    <h1>{{tittle}}</h1>
+
+    <div class="container">
+        <form id="user-form">
+            <div class="fotoform">
+            <img class="iconprofile fotoForm" [src]="perfilFotoUrl"></div>
+            <input type="file" id="foto" (change)="cambiarFoto($event)">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" value="Adri" disabled>
+
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" value="Sánchez Martínez" disabled>
+
+            <label for="correo">Correo:</label>
+            <input type="email" id="correo" value="jijaja@example.com">
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" value="123456789">
+
+            <button type="submit" onclick="guardarCambios()">Guardar</button>
+        </form>
+    </div>
+
+
+    <!--  <div class="imagenfondo">
          SECCIÓN ASIGNATURAS Y NOTA 
         <div class="espaciosec"> 
         -->
-<!-- 
+    <!-- 
             <section class=secNotas>
                 <div class="table-responsive">
                     <table class="table table-hover">

@@ -12,7 +12,8 @@ const routes: Routes = [
   {path: 'loggin', component: LogginComponent},
   {path: 'inicio', component: PerfilAlumnoComponent},
   {path:'back', component: BackNotasComponent },
-  {path:'perfil',component:PerfilAlumnoComponent}
+  {path:'perfil',component:PerfilAlumnoComponent},
+  {path:'',component: LogginComponent}
 ]
 
 @NgModule({

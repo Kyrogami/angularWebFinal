@@ -12,9 +12,8 @@
                     <!--          <li><a href="#">Notas</a></li>
                     <li><a href="#">Cursos</a></li>
                     <li><a href="#">To Do</a></li> -->
-                    <li><a  routerLink="options" href="">Opciones</a></li>
                     <li><a  routerLink="loggin" href="loggin">Loggin</a></li>
-                    <li><a  routerLink="noti" href="noti.html">Notificaciones</a></li>
+                    <li><a  routerLink="noti" href="perfil">Tu perfil</a></li>
                     <li><a  routerLink="back" href="back">Back Notas</a></li>
                 </ul>
             </li>
@@ -32,8 +31,9 @@
 
 </header>
 
+<router-outlet> 
 
-<router-outlet> </router-outlet>
+</router-outlet>
 
 
 <footer>
@@ -50,7 +50,12 @@
     <div>
         <div class="cajaHome">
             <button type="button" class="btn btn-primary btn-lg active homebuttom"><img class="home"
-                src="../../../assets/imagenesCSS/footer/alert-26.png"></button>
+                src="../../../assets/imagenesCSS/footer/alert-26.png">
+                <dialog id="ms">
+                    <button id="close" onclick="document.getElementById('ms').close()">Ok!</button>
+                  </dialog>
+                  <button id="show" class="popup" onclick="document.getElementById('ms').show()"></button>
+            </button>
         </div>
     </div>
     <div>

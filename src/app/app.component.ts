@@ -11,7 +11,7 @@ import { LogginComponent } from './components/loggin/loggin.component';
 })
 
 export class AppComponent {
-  title = 'Holita weys';
+  title = 'SOY GLOBAL';
   cosita = "soy una cosita";
   
 }
