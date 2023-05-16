@@ -22,7 +22,7 @@ body {
 .fotoform{max-height: 6em; display: flex; justify-content: center; align-items: center; }
 
 .imagenfondo {
-    background-image: url(../../../assets/imagenesCSS/fondos/cyberpunk.jpg);
+    background-image: url(../../../src/assets/imagenesCSS/fondos/cyberpunk.jpg);
     display: flex;
     justify-content: center;
     background-repeat: no-repeat;
@@ -102,10 +102,10 @@ nav {
     background-color: c6d4e1;
     display: flex;
     justify-content: center;
-    align-items: center;
     width: 25rem;
     height: 10rem;
     margin: 5rem;
+    padding: auto;
     align-items: center;
     border: #000000;
     border-width: medium;

@@ -6,6 +6,7 @@ import { BackNotasComponent } from './components/back-notas/back-notas.component
 import { PerfilAlumnoComponent } from './components/perfil-alumno/perfil-alumno.component';
 import { CommonModule } from '@angular/common';
 import { AppComponent } from './app.component';
+import { InicioAlumnoComponent } from './components/inicio-alumno/inicio-alumno.component';
 
 // RUTAS y con<router-outlet></router-outlet> lo saca.
 const routes: Routes = [
@@ -13,7 +14,9 @@ const routes: Routes = [
   {path: 'inicio', component: PerfilAlumnoComponent},
   {path:'back', component: BackNotasComponent },
   {path:'perfil',component:PerfilAlumnoComponent},
-  {path:'',component: LogginComponent}
+  {path:'editar',component: InicioAlumnoComponent},
+  {path:'',component: LogginComponent},
+
 ]
 
 @NgModule({

@@ -13,7 +13,7 @@ export class PerfilAlumnoComponent implements OnInit {
   usuario:any;
   perfilFotoUrl: string = '../../../assets/imagenesCSS/main.png';
   titulo: string ="Bienvenido a perfil"
-  tittle = 'SOY PERFIL-ALUMNO';
+  title = 'SOY PERFIL-ALUMNO';
 
     
 

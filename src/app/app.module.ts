@@ -7,6 +7,9 @@ import { PerfilAlumnoComponent } from './components/perfil-alumno/perfil-alumno.
 import { BackNotasComponent } from './components/back-notas/back-notas.component';
 import { AppRoutingModule } from './app-routing.module';
 import { UsuarioDetallesComponent } from './usuario-detalles/usuario-detalles.component';
+import { InicioAlumnoComponent } from './components/inicio-alumno/inicio-alumno.component';
+
+import { ParentComponent } from './components/parent/parent.component';
 //import{NgbCollapseModule, NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
@@ -16,7 +19,9 @@ import { UsuarioDetallesComponent } from './usuario-detalles/usuario-detalles.co
     LogginComponent,
     PerfilAlumnoComponent,
     BackNotasComponent,
-    UsuarioDetallesComponent
+    UsuarioDetallesComponent,
+    InicioAlumnoComponent,
+
   ],
   imports: [
     BrowserModule,

@@ -5,25 +5,34 @@
     <div class="imagenfondo">
         <!-- SECCIÓN ASIGNATURAS Y NOTA -->
         <div class="espaciosec">
-<div id="titulolista">Listad de Alumnos
+<div id="titulolista">Listado de Alumnos
 <div id="cajaDetalles">
   <table class="table table-hover">
     <thead>
       <tr class="asignaturas">
+        <th id="stat">Id</th>
         <th id="stat">Nombre</th>
         <th id="stat">Apellidos</th>
         <th id="stat">DNI</th>
         <th id="stat">direccion</th>
+
+        <th id="stat">usuario</th>
+        <th id="stat">teléono</th>
         <th id="stat">activo</th>
       </tr>
     </thead>
     <tbody>
         <tr *ngFor="let detallesUsuarios of listaUsuarios">
+            <td class="datos">{{ detallesUsuarios.id }}</td>
           <td class="datos">{{ detallesUsuarios.nombre }}</td>
           <td class="datos">{{ detallesUsuarios.apellidos }}</td>
           <td class="datos">{{ detallesUsuarios.dni }}</td>
           <td class="datos">{{ detallesUsuarios.direccion }}</td>
+
+          <td class="datos">{{ detallesUsuarios.usuario }}</td>
+          <td class="datos">{{ detallesUsuarios.telefono }}</td>
           <td class="datos">{{ detallesUsuarios.activo }}</td>
+
           <!-- Resto de las columnas de datos -->
         </tr>
       </tbody>
@@ -32,54 +41,6 @@
 </div>
 </div>
 
-
-            <section class=secNotas>
-                <div class="table-responsive">
-                    <table class="table table-hover">
-                        <thead>
-                            <tr class=asignaturas>
-                                <th>Asignatura</th>
-                                <th>Nombre</th>
-                                <th>Apellidos</th>
-                                <th>Nota</th>
-                                <th>Curso</th>
-                                <th>Avance</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="datos">MYSQL</td>
-                                <td class="datos">Adri</td>
-                                <td class="datos">Sánchez Martínez</td>
-                                <td class="datos">10</td>
-                                <td class="datos">FULLSTACK</td>
-                                <td class="datos">73%</td>
-
-                                <tr>
-                                    <td class="datos">HTML</td>
-                                    <td class="datos">Adri</td>
-                                    <td class="datos">Sánchez Martínez</td>
-                                    <td class="datos">10</td>
-                                    <td class="datos">FULLSTACK%</td>
-                                    <td class="datos">73%</td>
-
-                                    <tr>
-                                        <td class="datos">CSS</td>
-                                        <td class="datos">Adri</td>
-                                        <td class="datos">Sánchez Martínez</td>
-                                        <td class="datos">10</td>
-                                        <td class="datos">FULLSTACK</td>
-                                        <td class="datos">73%</td>
-                            </tr>
-                            <tr>
-                        </tbody>
-                    </table>
-                </div>
-            </section>
-
-        </div>
-        
-    </div>
 </div>
 
 
