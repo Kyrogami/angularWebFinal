@@ -22,7 +22,7 @@ body {
 .fotoform{max-height: 6em; display: flex; justify-content: center; align-items: center; }
 
 .imagenfondo {
-    background-image: url(../../../src/assets/imagenesCSS/fondos/cyberpunk.jpg);
+    background-image: url(../../../assets/imagenesCSS/fondos/cyberpunk.png);
     display: flex;
     justify-content: center;
     background-repeat: no-repeat;

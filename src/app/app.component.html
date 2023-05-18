@@ -2,7 +2,6 @@
 
 
 <header class="cabecera">
-    <h1>{{title}}</h1>
     <!-- MENU DESPLEGABLE -->
     <nav>
         <ul class="menu-horizontal">
@@ -13,8 +12,8 @@
                     <li><a href="#">Cursos</a></li>
                     <li><a href="#">To Do</a></li> -->
                     <li><a  routerLink="loggin" href="loggin">Loggin</a></li>
-                    <li><a  routerLink="perfil" href="perfil">Editar perfil</a></li>
-                    <li><a  routerLink="editar" href="editar">Tu perfil</a></li>
+                    <li><a  routerLink="editar" href="editar">Editar perfil</a></li>
+                    <li><a  routerLink="perfil" href="perfil">Tu perfil</a></li>
                     <li><a  routerLink="back" href="back">Back Notas</a></li>
                 </ul>
             </li>
@@ -26,7 +25,7 @@
     </nav>
     <div class="tituloname">MoodleGG</div>
 
-    <div class="perfil"><a class="a" routerLink="editar" href="editar"><img class="home"><img class="iconprofile"
+    <div class="perfil"><a class="a" routerLink="editar" href="perfil"><img class="home"><img class="iconprofile"
         src="../../../assets/imagenesCSS/main.png"> </a></div>
 
 
@@ -52,10 +51,7 @@
         <div class="cajaHome">
             <button type="button" class="btn btn-primary btn-lg active homebuttom"><img class="home"
                 src="../../../assets/imagenesCSS/footer/alert-26.png">
-                <dialog id="ms">
-                    <button id="close" onclick="document.getElementById('ms').close()">Ok!</button>
-                  </dialog>
-                  <button id="show" class="popup" onclick="document.getElementById('ms').show()"></button>
+
             </button>
         </div>
     </div>

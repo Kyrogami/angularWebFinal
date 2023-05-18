@@ -13,6 +13,8 @@ export class BackNotasComponent {
   selectedUsuario?: interfazUsuario;
   usuario:any;
 
+  
+
   constructor() { }
 
   ngOnInit() {
@@ -22,4 +24,6 @@ export class BackNotasComponent {
     this.selectedUsuario = selectedUsuario;
     
   }
+
+  
 }

@@ -13,8 +13,8 @@ const routes: Routes = [
   {path: 'loggin', component: LogginComponent},
   {path: 'inicio', component: PerfilAlumnoComponent},
   {path:'back', component: BackNotasComponent },
-  {path:'perfil',component:PerfilAlumnoComponent},
-  {path:'editar',component: InicioAlumnoComponent},
+  {path:'perfil',component:InicioAlumnoComponent},
+  {path:'editar',component:PerfilAlumnoComponent },
   {path:'',component: LogginComponent},
 
 ]

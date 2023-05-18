@@ -11,9 +11,17 @@
     top: 50;
 }
 
+#contenido td:not(:first-child) {
+    display: none;
+  }
+  
+
+h1{font-weight: bolder; text-align: center;}
+
 .stat{font-size: xx-large;}
 
 #titulolista {
+    padding-top: 10em;
     color: white;
 
     justify-content: center;
