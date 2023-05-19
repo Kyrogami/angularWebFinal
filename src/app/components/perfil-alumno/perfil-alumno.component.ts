@@ -15,8 +15,7 @@ export class PerfilAlumnoComponent implements OnInit {
   titulo: string ="Bienvenido a perfil"
   title = 'SOY PERFIL-ALUMNO';
 
-    
-
+  
   
 
   constructor() { }

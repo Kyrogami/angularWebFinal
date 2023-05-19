@@ -19,7 +19,12 @@ body {
     display: flex;
 }
 
-.fotoform{max-height: 6em; display: flex; justify-content: center; align-items: center; }
+.fotoform {
+    max-height: 6em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .imagenfondo {
     background-image: url(../../../assets/imagenesCSS/fondos/cyberpunk.jpg);
@@ -294,17 +299,21 @@ footer {
 
 
 @media (max-width: 580px) {
-    .secNotas {
-        width: 15rem;
-        height: 20%;
-        position: absolute;
+    form {
+        height: 33em;
+        width: 18em;
 
     }
 
-    .secInfo {
-        width: 15rem;
-        height: 35%;
-        position: absolute;
-        left: 0;
+    input#foto {
+        width: 9em;
+        display: flex;
+        margin-right: 3em;
+        margin-left: 3em;
+    }
+
+    form>button {
+        margin-right: 5em;
+        margin-left: 5em;
     }
 }
