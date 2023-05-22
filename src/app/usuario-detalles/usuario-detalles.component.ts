@@ -1,31 +1,42 @@
-import { Component, Input } from '@angular/core';
-//import { interfazUsuario } from '../usuarios';
+import { Component, Input, OnInit } from '@angular/core';
+import { interfazUsuario } from '../usuarios';
 import { UsuariosService } from '../usuarios.service';
-import { USUARIOS } from '../listaUsuarios';
-
+//import { USUARIOS } from '../listaUsuarios';
+import { MensajeComponent } from '../mensaje/mensaje.component';
+import { MensajeService } from '../mensaje.service';
 @Component({
   selector: 'app-usuario-detalles',
   templateUrl: './usuario-detalles.component.html',
   styleUrls: ['./usuario-detalles.component.css']
 })
-export class UsuarioDetallesComponent {
+export class UsuarioDetallesComponent implements OnInit {   //añadimos onInit
 
-listaUsuarios: any = [];
+  selectedUsuario?: interfazUsuario;
 
-getUsuarios():void{
-  //const listaObservableUsuarios = of (USUARIOS);
-  //this.UsuariosService.getUsuarios();
-  .subscribe(listaUsuarios => this.listaUsuarios = this.USUARIOS);
-}
-// lanza como inicializador del objeto
-ngOnInit(): void{
-  this.USUARIOS = this.UsuariosService()this.getUsuarios;
+  usuarios: interfazUsuario[] = [];
 
-}
+  listaUsuarios: any = []; //esta era la declaracion anterior antes de suscriirnos ANY : POR SI ACASO.
+
+  //creo variable lista usuarios y llamamos a usuarios servicios getUsuarios
+
+  // lanza como inicializador del objeto SINO LO LLAMAS (); NO VA  
   // le damos un constructor  
-  constructor(private UsuariosService : UsuariosService){
+  constructor(private UsuariosService: UsuariosService, private mensajeService: MensajeService) { }
 
+  ngOnInit(): void {
+    this.getUsuarios();
   }
+
+  getUsuarios(): void {
+    this.UsuariosService.getUsuarios()
+      .subscribe(listaUsuarios => this.listaUsuarios = listaUsuarios); // NO LO ENTIENDO ES IGUALAR UN PUNTERO A UN PUNTERO (no lo entiendo)
+  }
+
+  onSelect(usuario: interfazUsuario): void {
+    this.selectedUsuario = usuario;
+    this.mensajeService.add(`interfazUsuario: Selected user id=${usuario.id}`);
+  }
+
 }
 
 //hemos sustituido dinámico por estático. como? comentando la lista de interfaz 

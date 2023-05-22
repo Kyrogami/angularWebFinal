@@ -1,38 +1,38 @@
-<div *ngIf="usuario">
-  <div><span>ID: </span>{{usuario.id}}</div>
-  <div><span>Nombre: </span>{{usuario.nombre}}</div>
-  <div id="detalles">
-      <label for="usuario-id">ID de usuario: </label>
-      <input id="usuario-id" [(ngModel)]="usuario.id" placeholder="ID">
-      <label for="usuario-nombre">Nombre: </label>
 
-      <input id="usuario-nombre" [(ngModel)]="usuario.nombre" placeholder="Nombre">
-      <label for="usuario-nombre">Apellidos: </label>
+<div class="imagenfondo">
+  <!-- SECCIÓN ASIGNATURAS Y NOTA -->
+  <div class="espaciosec">
 
-      <input id="usuario-nombre" [(ngModel)]="usuario.dni" placeholder="Nombre">
-      <label for="usuario-nombre">DNI: </label>
-      
-      <input id="usuario-nombre" [(ngModel)]="usuario.usuario" placeholder="Nombre">
-      <label for="usuario-nombre">Usuario: </label>
+<div>
+  <li *ngFor="let listaUsuarios of listaUsuarios">  </li> </div>
 
-      <input id="usuario-nombre" type="password" [(ngModel)]="usuario.password" placeholder="Nombre">
-      <label  for="usuario-nombre">Contraseña: </label>
+<div id="titulolista"><h1>Listado de Alumnos</h1>
+  <div id="cajaDetalles">
+    <table class="table table-hover">
+      <thead>
+        <tr class="asignaturas">
+          <th id="stat">Id</th>
+          <th id="stat">Nombre</th>
+          <th id="stat">Apellidos</th>
+          <th id="stat">DNI</th>
+          <th id="stat">direccion</th>
+  
+          <th id="stat">usuario</th>
+          <th id="stat">teléono</th>
+          <th id="stat">activo</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr *ngFor="let listaUsuarios of listaUsuarios">
+              <td class="datos">{{ listaUsuarios.id }}</td>
+            <td class="datos">{{ listaUsuarios.nombre }}</td>
+            <td class="datos">{{ listaUsuarios.apellidos }}</td>
+            <td class="datos">{{ listaUsuarios.dni }}</td>
+            <td class="datos">{{ listaUsuarios.direccion }}</td>
+  
+            <td class="datos">{{ listaUsuarios.usuario }}</td>
+            <td class="datos">{{ listaUsuarios.telefono }}</td>
+            <td class="datos">{{ listaUsuarios.activo }}</td>
 
-      <input id="usuario-nombre" [(ngModel)]="usuario.foto" placeholder="Nombre">
-      <label for="usuario-nombre">Foto: </label>
+            
 
-      <input id="usuario-nombre" [(ngModel)]="usuario.direccion" placeholder="Nombre">
-      <label for="usuario-nombre">Direccion: </label>
-
-      <input id="usuario-nombre" [(ngModel)]="usuario.telefono" placeholder="Nombre">
-      <label for="usuario-nombre">Telefono: </label>
-
-      <input id="usuario-nombre" [(ngModel)]="usuario.tipo_usuario" placeholder="Nombre">
-      <label for="usuario-nombre">Tipo Usuario: </label>
-
-      <input id="usuario-nombre" [(ngModel)]="usuario.activo" placeholder="Nombre">
-      <label for="usuario-nombre">Activo: </label>
-
-
-  </div>
-</div>

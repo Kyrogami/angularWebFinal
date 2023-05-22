@@ -10,6 +10,7 @@ import { UsuarioDetallesComponent } from './usuario-detalles/usuario-detalles.co
 import { InicioAlumnoComponent } from './components/inicio-alumno/inicio-alumno.component';
 
 import { ParentComponent } from './components/parent/parent.component';
+import { MensajeComponent } from './mensaje/mensaje.component';
 //import{NgbCollapseModule, NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
@@ -21,6 +22,7 @@ import { ParentComponent } from './components/parent/parent.component';
     BackNotasComponent,
     UsuarioDetallesComponent,
     InicioAlumnoComponent,
+    MensajeComponent,
 
   ],
   imports: [
