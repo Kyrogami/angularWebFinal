@@ -3,7 +3,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { MensajeService } from './mensaje.service';
 import { Observable, of } from 'rxjs';
 import { interfazUsuario } from './usuarios';
-import { USUARIOS } from './listaUsuarios';
+//import { USUARIOS } from './listaUsuarios';
 import { UsuarioDetallesComponent } from './usuario-detalles/usuario-detalles.component';
 
 
@@ -12,7 +12,7 @@ import { UsuarioDetallesComponent } from './usuario-detalles/usuario-detalles.co
   providedIn: 'root'
 })
 export class UsuariosService {
-  private usuariosUrl = 'api/usuario'; 
+  private usuariosUrl = 'api/usuarios'; 
   private log(message: string) {
     this.mensaje.add(`UsuariosService: ${message}`);
   }
@@ -21,7 +21,7 @@ export class UsuariosService {
 
   // Llamo al interfazUsuario y devuelve usuarios
   getUsuarios(): Observable<interfazUsuario[]> {
-    const observableUsuario = of(USUARIOS);
+    //const observableUsuario = of(USUARIOS);
 
     //cambiamos la llamada de la lista de users locales por llamada HTTTP
 

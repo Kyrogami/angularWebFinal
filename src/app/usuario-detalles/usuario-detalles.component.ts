@@ -21,11 +21,7 @@ export class UsuarioDetallesComponent implements OnInit {   //añadimos onInit
 
   // lanza como inicializador del objeto SINO LO LLAMAS (); NO VA  
   // le damos un constructor  
-  constructor(private UsuariosService: UsuariosService, private mensajeService: MensajeService) { }
-
-  ngOnInit(): void {
-    this.getUsuarios();
-  }
+ 
 
   getUsuarios(): void {
     this.UsuariosService.getUsuarios()
@@ -36,6 +32,12 @@ export class UsuarioDetallesComponent implements OnInit {   //añadimos onInit
     this.selectedUsuario = usuario;
     this.mensajeService.add(`interfazUsuario: Selected user id=${usuario.id}`);
   }
+
+  ngOnInit(): void {
+    this.getUsuarios();
+  }
+
+  constructor(private UsuariosService: UsuariosService, private mensajeService: MensajeService) { }
 
 }
 

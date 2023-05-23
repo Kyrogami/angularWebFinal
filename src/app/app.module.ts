@@ -8,11 +8,14 @@ import { BackNotasComponent } from './components/back-notas/back-notas.component
 import { AppRoutingModule } from './app-routing.module';
 import { UsuarioDetallesComponent } from './usuario-detalles/usuario-detalles.component';
 import { InicioAlumnoComponent } from './components/inicio-alumno/inicio-alumno.component';
-import { HttpClientModule } from '@angular/common/http';
+
 import { ParentComponent } from './components/parent/parent.component';
 import { MensajeComponent } from './mensaje/mensaje.component';
+
+import { HttpClientModule } from '@angular/common/http';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService } from './in-memory-data.service';
+
 
 //import{NgbCollapseModule, NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
@@ -26,6 +29,7 @@ import { InMemoryDataService } from './in-memory-data.service';
     UsuarioDetallesComponent,
     InicioAlumnoComponent,
     MensajeComponent,
+
 
   ],
   imports: [

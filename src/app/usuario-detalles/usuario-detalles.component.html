@@ -1,38 +1,36 @@
-
 <div class="imagenfondo">
   <!-- SECCIÓN ASIGNATURAS Y NOTA -->
   <div class="espaciosec">
-
-<div>
-  <li *ngFor="let listaUsuarios of listaUsuarios">  </li> </div>
-
-<div id="titulolista"><h1>Listado de Alumnos</h1>
-  <div id="cajaDetalles">
-    <table class="table table-hover">
-      <thead>
-        <tr class="asignaturas">
-          <th id="stat">Id</th>
-          <th id="stat">Nombre</th>
-          <th id="stat">Apellidos</th>
-          <th id="stat">DNI</th>
-          <th id="stat">direccion</th>
-  
-          <th id="stat">usuario</th>
-          <th id="stat">teléono</th>
-          <th id="stat">activo</th>
-        </tr>
-      </thead>
-      <tbody>
-          <tr *ngFor="let listaUsuarios of listaUsuarios">
-              <td class="datos">{{ listaUsuarios.id }}</td>
-            <td class="datos">{{ listaUsuarios.nombre }}</td>
-            <td class="datos">{{ listaUsuarios.apellidos }}</td>
-            <td class="datos">{{ listaUsuarios.dni }}</td>
-            <td class="datos">{{ listaUsuarios.direccion }}</td>
-  
-            <td class="datos">{{ listaUsuarios.usuario }}</td>
-            <td class="datos">{{ listaUsuarios.telefono }}</td>
-            <td class="datos">{{ listaUsuarios.activo }}</td>
-
-            
-
+    <div id="titulolista">
+      <h1>Listado de Alumnos</h1>
+      <div id="cajaDetalles">
+        <table class="table table-hover">
+          <thead>
+            <tr class="asignaturas">
+              <th id="stat">Id</th>
+              <th id="stat">Nombre</th>
+              <th id="stat">Apellidos</th>
+              <th id="stat">DNI</th>
+              <th id="stat">Dirección</th>
+              <th id="stat">Usuario</th>
+              <th id="stat">Teléfono</th>
+              <th id="stat">Activo</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let usuario of listaUsuarios">
+              <td class="datos">{{ usuario.id }}</td>
+              <td class="datos">{{ usuario.nombre }}</td>
+              <td class="datos">{{ usuario.apellidos }}</td>
+              <td class="datos">{{ usuario.dni }}</td>
+              <td class="datos">{{ usuario.direccion }}</td>
+              <td class="datos">{{ usuario.usuario }}</td>
+              <td class="datos">{{ usuario.telefono }}</td>
+              <td class="datos">{{ usuario.activo }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
